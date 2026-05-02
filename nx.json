@@ -13,9 +13,7 @@
     {
       "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": {
-          "targetName": "typecheck"
-        },
+        "typecheck": { "targetName": "typecheck" },
         "build": {
           "targetName": "build",
           "configName": "tsconfig.lib.json",
@@ -24,18 +22,8 @@
         }
       }
     },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    }
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } }
   ],
   "analytics": false,
   "targetDefaults": {
@@ -68,5 +56,5 @@
       "unitTestRunner": "vitest-angular"
     }
   },
-  "nxCloudId": "69f60f8763d897c566c87f04"
+  "nxCloudId": "69f60fcf853127374edaefaf"
 }
